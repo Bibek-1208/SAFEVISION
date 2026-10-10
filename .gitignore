@@ -28,6 +28,10 @@ ai/.venv311/
 */.playwright-mcp/
 graphify-out/
 */graphify-out/
+docs/
+*/docs/
+adapters/
+*/adapters/
 
 # Build artifacts
 dist/
