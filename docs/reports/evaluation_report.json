@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-09-28T05:57:27Z",
+  "status": "NOT_VALIDATED",
+  "model_path": "C:\\Users\\bibek\\Desktop\\SAFEVISION\\ai\\models\\industrial_yolov8.pt",
+  "model_checksum": "sha256:5449f62bd7cf30c01c7fd138db2729a38abcb4d5120449773fba475d54f30b62",
+  "dataset_path": "C:\\Users\\bibek\\Desktop\\SAFEVISION\\ai\\configs\\sh17_ppe.yaml",
+  "reason": "Validation dataset and ground-truth labels are not physically available on host.",
+  "metrics": null,
+  "guidance": "To run full evaluation, place official SH17 val split in datasets directory and configure configs/sh17_ppe.yaml."
+}

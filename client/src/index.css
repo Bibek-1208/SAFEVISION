@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --header-height: 4rem;
+    --sidebar-width: 16rem;
+  }
+
+  body {
+    background-color: #121212;
+    color: #F3F4F6;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Industrial Telemetry Mono */
+  .font-mono {
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  /* Custom Industrial Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #121212;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2A2A2A;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3E3E3E;
+  }
+}
+
+@layer utilities {
+  .hud-panel {
+    background: #1E1E1E;
+    border: 1px solid #2A2A2A;
+  }
+
+  .hud-panel-elevated {
+    background: #252525;
+    border: 1px solid #333333;
+  }
+
+  .glow-border-critical {
+    border-color: #EF4444;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.4);
+  }
+
+  .glow-border-safe {
+    border-color: #34D399;
+    box-shadow: 0 0 10px rgba(52, 211, 153, 0.3);
+  }
+
+  .glow-border-warning {
+    border-color: #FBBF24;
+    box-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+  }
+
+  .scanline {
+    background: linear-gradient(
+      rgba(18, 18, 18, 0) 50%, 
+      rgba(0, 0, 0, 0.25) 50%
+    ), linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.03),
+      rgba(0, 255, 0, 0.01),
+      rgba(0, 0, 255, 0.03)
+    );
+    background-size: 100% 4px, 6px 100%;
+    pointer-events: none;
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

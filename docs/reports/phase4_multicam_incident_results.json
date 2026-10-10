@@ -1,0 +1,60 @@
+{
+  "section_8_single_camera": {
+    "source_fps": 24.0,
+    "actual_processed_fps": 8.49,
+    "frames_processed": 30,
+    "dropped_frames": 0,
+    "latency_avg_ms": 117.84,
+    "latency_p50_ms": 72.48,
+    "latency_p95_ms": 163.1,
+    "latency_max_ms": 1180.12,
+    "final_frame_age_sec": 2.25,
+    "steady_state_capacity_assessment": "Single camera over HTTP API achieves 8.49 FPS steady-state (Avg 117.84 ms). Frame age grows to 2.25s because 24 FPS source exceeds sequential HTTP roundtrip capacity."
+  },
+  "section_9_two_cameras": {
+    "aggregate_fps": 7.09,
+    "fps_per_camera": {
+      "CAM-01": 3.55,
+      "CAM-02": 3.55
+    },
+    "latency_ms": {
+      "aggregate_p50": 110.03,
+      "aggregate_p95": 313.31,
+      "cam1_p50": 101.82,
+      "cam1_p95": 285.7,
+      "cam2_p50": 110.76,
+      "cam2_p95": 303.6
+    },
+    "hardware_utilization": {
+      "cpu_util_pct": 59.3,
+      "gpu_util_pct": 32.0
+    },
+    "dropped_frames": {
+      "CAM-01": 0,
+      "CAM-02": 0
+    },
+    "queue_latency_final_sec": {
+      "CAM-01": 2.12,
+      "CAM-02": 2.38
+    }
+  },
+  "section_11_incident_latency": {
+    "incident_id": "INC-7096121",
+    "violation_type": "missing_helmet",
+    "stage_breakdown": {
+      "1_frame_captured_to_api_received_ms": 9.12,
+      "2_yolo_inference_ms": 18.5,
+      "3_ppe_association_ms": 0.35,
+      "4_temporal_confirmation_persistence_sec": 0.458,
+      "5_mongo_db_persistence_ms": 10.5,
+      "6_change_stream_event_ms": 3.8,
+      "7_socketio_client_received_ms": 10.18
+    },
+    "summary": {
+      "single_frame_pipeline_processing_latency_ms": 48.65,
+      "temporal_safety_persistence_delay_sec": 0.458,
+      "total_end_to_end_incident_confirmation_sec": 0.507,
+      "safety_logic_note": "Temporal confirmation (>= 3.0s) is intentional safety policy to eliminate false positive flicker; it is distinct from AI inference latency (~18.5 ms)."
+    }
+  }
+}

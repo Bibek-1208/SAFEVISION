@@ -1,0 +1,12 @@
+{
+  "1_missing_helmet_detected": "VERIFIED",
+  "2_helmet_present_compliant": "VERIFIED",
+  "3_unknown_remains_unknown": "VERIFIED",
+  "4_temporal_persistence_enforced": "VERIFIED",
+  "5_duplicate_prevention_works": "VERIFIED",
+  "6_mongodb_persisted": "VERIFIED",
+  "7_change_stream_fires": "VERIFIED",
+  "8_socketio_fires": "VERIFIED",
+  "9_rtsp_disconnect_handled": "VERIFIED",
+  "10_rtsp_reconnect_works": "VERIFIED"
+}

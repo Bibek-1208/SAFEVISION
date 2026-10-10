@@ -1,0 +1,36 @@
+{
+  "TEST_A_Sequential": {
+    "architecture": "TEST A: Sequential Inference",
+    "aggregate_fps": 57.74,
+    "fps_per_camera": 14.43,
+    "p50_latency_ms": 15.13,
+    "p95_latency_ms": 26.01,
+    "gpu_peak_mb": 35.08,
+    "cpu_percent": 25.8,
+    "candidates_created": 0,
+    "dropped_frames": 0
+  },
+  "TEST_B_Batched": {
+    "architecture": "TEST B: Batched Inference (B=4)",
+    "aggregate_fps": 104.65,
+    "fps_per_camera": 26.16,
+    "p50_latency_ms": 8.59,
+    "p95_latency_ms": 11.18,
+    "gpu_peak_mb": 60.3,
+    "cpu_percent": 25.5,
+    "candidates_created": 0,
+    "dropped_frames": 0
+  },
+  "TEST_D_Sampling": {
+    "architecture": "TEST D: Temporal-Safe 2x Sampling",
+    "aggregate_fps": 64.85,
+    "fps_per_camera": 16.21,
+    "p50_latency_ms": 14.14,
+    "p95_latency_ms": 23.55,
+    "gpu_peak_mb": 23.74,
+    "cpu_percent": 23.1,
+    "candidates_created": 0,
+    "dropped_frames": 0,
+    "temporal_validity": "PRESERVED: Real video timestamps passed; violation ratio & persistence thresholds unchanged"
+  }
+}

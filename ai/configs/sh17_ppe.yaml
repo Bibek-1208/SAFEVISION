@@ -1,0 +1,42 @@
+# SafeVision AI — SH17 Official Industrial PPE Dataset Configuration
+# Provenance: https://github.com/ahmadmughees/SH17dataset / arXiv:2407.08581
+# Classes exactly match the official SH17 model checkpoint architecture (nc: 17)
+# Note: "no_helmet", "no_vest", "fire", "smoke" are NOT SH17 classes.
+# Negative compliance is an application-level spatial association evaluation.
+
+path: ./datasets/sh17
+train: images/train
+val: images/val
+test: images/test
+
+nc: 17
+names:
+  0: person
+  1: ear
+  2: ear-mufs
+  3: face
+  4: face-guard
+  5: face-mask
+  6: foot
+  7: tool
+  8: glasses
+  9: gloves
+  10: helmet
+  11: hands
+  12: head
+  13: medical-suit
+  14: shoes
+  15: safety-suit
+  16: safety-vest
+
+# Hyperparameters for training/fine-tuning SH17
+hyperparameters:
+  imgsz: 640
+  epochs: 100
+  batch_size: 16
+  learning_rate: 0.01
+  momentum: 0.937
+  weight_decay: 0.0005
+  confidence_threshold: 0.45
+  iou_threshold: 0.50
+  optimizer: SGD

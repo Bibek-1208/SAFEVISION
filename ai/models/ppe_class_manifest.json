@@ -1,0 +1,38 @@
+{
+  "modelVersion": "8.0.0-custom",
+  "modelId": "MODEL-PPE-YOLOV8N-CUSTOM",
+  "modelName": "Custom YOLOv8n PPE Model (best.pt)",
+  "framework": "PyTorch / Ultralytics YOLOv8n",
+  "weightsFile": "best.pt",
+  "totalClasses": 4,
+  "classManifest": [
+    {
+      "modelIndex": 0,
+      "safeVisionClassId": "SV-PPE-002",
+      "className": "helmet",
+      "displayName": "Safety Helmet",
+      "category": "PPE"
+    },
+    {
+      "modelIndex": 1,
+      "safeVisionClassId": "SV-PPE-NO-HELMET",
+      "className": "no_helmet",
+      "displayName": "No Helmet",
+      "category": "HAZARD"
+    },
+    {
+      "modelIndex": 2,
+      "safeVisionClassId": "SV-PPE-NO-VEST",
+      "className": "no_vest",
+      "displayName": "No Vest",
+      "category": "HAZARD"
+    },
+    {
+      "modelIndex": 3,
+      "safeVisionClassId": "SV-PPE-003",
+      "className": "safety-vest",
+      "displayName": "Safety Vest",
+      "category": "PPE"
+    }
+  ]
+}

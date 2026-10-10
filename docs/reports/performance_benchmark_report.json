@@ -1,0 +1,149 @@
+{
+  "720p": {
+    "resolution": "1280x720",
+    "input_fps": 23.98,
+    "inference_fps": 43.0,
+    "pipeline_fps": 23.71,
+    "frames_processed": 80,
+    "dropped_frames": 0,
+    "number_of_tracks": 2,
+    "stage_latencies_ms": {
+      "decode": {
+        "avg": 14.61,
+        "p50": 12.07,
+        "p95": 15.67
+      },
+      "yolo_inference": {
+        "avg": 23.26,
+        "p50": 19.69,
+        "p95": 30.47
+      },
+      "bytetrack": {
+        "avg": 0.2,
+        "p50": 0.16,
+        "p95": 0.26
+      },
+      "ppe_association": {
+        "avg": 0.26,
+        "p50": 0.22,
+        "p95": 0.4
+      },
+      "temporal_validation": {
+        "avg": 0.02,
+        "p50": 0.02,
+        "p95": 0.04
+      },
+      "incident_mongodb": {
+        "avg": 0.32,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "total_end_to_end": {
+        "avg": 42.18,
+        "p50": 35.57,
+        "p95": 52.25
+      }
+    },
+    "gpu_memory_allocated_mb": 11.55,
+    "gpu_peak_memory_mb": 23.78,
+    "avg_cpu_percent": 50.2
+  },
+  "1080p": {
+    "resolution": "1920x1080",
+    "input_fps": 23.98,
+    "inference_fps": 51.11,
+    "pipeline_fps": 34.17,
+    "frames_processed": 80,
+    "dropped_frames": 0,
+    "number_of_tracks": 2,
+    "stage_latencies_ms": {
+      "decode": {
+        "avg": 6.14,
+        "p50": 5.22,
+        "p95": 7.42
+      },
+      "yolo_inference": {
+        "avg": 19.57,
+        "p50": 17.93,
+        "p95": 31.77
+      },
+      "bytetrack": {
+        "avg": 0.16,
+        "p50": 0.14,
+        "p95": 0.21
+      },
+      "ppe_association": {
+        "avg": 0.27,
+        "p50": 0.21,
+        "p95": 0.34
+      },
+      "temporal_validation": {
+        "avg": 0.02,
+        "p50": 0.02,
+        "p95": 0.03
+      },
+      "incident_mongodb": {
+        "avg": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "total_end_to_end": {
+        "avg": 29.27,
+        "p50": 26.42,
+        "p95": 43.17
+      }
+    },
+    "gpu_memory_allocated_mb": 11.55,
+    "gpu_peak_memory_mb": 23.74,
+    "avg_cpu_percent": 47.6
+  },
+  "4K": {
+    "resolution": "3840x2160",
+    "input_fps": 23.98,
+    "inference_fps": 44.94,
+    "pipeline_fps": 18.71,
+    "frames_processed": 80,
+    "dropped_frames": 0,
+    "number_of_tracks": 2,
+    "stage_latencies_ms": {
+      "decode": {
+        "avg": 27.64,
+        "p50": 25.73,
+        "p95": 35.4
+      },
+      "yolo_inference": {
+        "avg": 22.25,
+        "p50": 21.79,
+        "p95": 31.01
+      },
+      "bytetrack": {
+        "avg": 0.15,
+        "p50": 0.14,
+        "p95": 0.23
+      },
+      "ppe_association": {
+        "avg": 0.22,
+        "p50": 0.2,
+        "p95": 0.34
+      },
+      "temporal_validation": {
+        "avg": 0.02,
+        "p50": 0.02,
+        "p95": 0.04
+      },
+      "incident_mongodb": {
+        "avg": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "total_end_to_end": {
+        "avg": 53.45,
+        "p50": 50.83,
+        "p95": 70.29
+      }
+    },
+    "gpu_memory_allocated_mb": 11.55,
+    "gpu_peak_memory_mb": 23.74,
+    "avg_cpu_percent": 46.8
+  }
+}

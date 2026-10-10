@@ -1,0 +1,239 @@
+{
+  "version": "1.0.0",
+  "protectedBaselineId": "MODEL-PPE-BASELINE-SH17",
+  "totalModels": 2,
+  "updatedAt": "2026-10-10T17:17:08.497014+00:00",
+  "models": [
+    {
+      "modelId": "MODEL-PPE-BASELINE-SH17",
+      "modelName": "Baseline Industrial PPE Detector (External SH17)",
+      "modelVersion": "1.0.0-sh17",
+      "parentModelId": null,
+      "modelType": "OBJECT_DETECTION_PPE",
+      "framework": "PyTorch / Ultralytics YOLOv8 (yolov8n.pt)",
+      "datasetSources": [
+        "https://github.com/ahmadmughees/SH17dataset",
+        "arXiv:2407.08581 [cs.CV]"
+      ],
+      "datasetVersions": [
+        "SH17 v1.0 (external research checkpoint safehuman_nano_v0_14)"
+      ],
+      "datasetLicenses": [
+        "CC BY-NC-SA 4.0 (Creative Commons NonCommercial-ShareAlike)"
+      ],
+      "datasetId": null,
+      "datasetHash": null,
+      "ontologyVersion": "1.0.0",
+      "classManifest": [
+        {
+          "modelIndex": 0,
+          "safeVisionClassId": "SV-PPE-001",
+          "className": "person",
+          "displayName": "Person",
+          "category": "PERSON"
+        },
+        {
+          "modelIndex": 1,
+          "safeVisionClassId": "SV-PPE-014",
+          "className": "ear",
+          "displayName": "Anatomical Ear",
+          "category": "ANATOMICAL"
+        },
+        {
+          "modelIndex": 2,
+          "safeVisionClassId": "SV-PPE-008",
+          "className": "ear-mufs",
+          "displayName": "Hearing Protection / Ear Muffs",
+          "category": "PPE"
+        },
+        {
+          "modelIndex": 3,
+          "safeVisionClassId": "SV-PPE-013",
+          "className": "face",
+          "displayName": "Anatomical Face",
+          "category": "ANATOMICAL"
+        },
+        {
+          "modelIndex": 4,
+          "safeVisionClassId": "SV-PPE-009",
+          "className": "face-guard",
+          "displayName": "Face Shield / Guard",
+          "category": "PPE"
+        },
+        {
+          "modelIndex": 5,
+          "safeVisionClassId": "SV-PPE-007",
+          "className": "face-mask",
+          "displayName": "Face / Dust Mask",
+          "category": "PPE"
+        },
+        {
+          "modelIndex": 6,
+          "safeVisionClassId": "SV-PPE-016",
+          "className": "foot",
+          "displayName": "Anatomical Foot",
+          "category": "ANATOMICAL"
+        },
+        {
+          "modelIndex": 7,
+          "safeVisionClassId": "SV-PPE-017",
+          "className": "tool",
+          "displayName": "Industrial Tool",
+          "category": "EQUIPMENT"
+        },
+        {
+          "modelIndex": 8,
+          "safeVisionClassId": "SV-PPE-006",
+          "className": "glasses",
+          "displayName": "Safety Glasses / Goggles",
+          "category": "PPE"
+        },
+        {
+          "modelIndex": 9,
+          "safeVisionClassId": "SV-PPE-004",
+          "className": "gloves",
+          "displayName": "Protective Gloves",
+          "category": "PPE"
+        },
+        {
+          "modelIndex": 10,
+          "safeVisionClassId": "SV-PPE-002",
+          "className": "helmet",
+          "displayName": "Hard Hat / Helmet",
+          "category": "PPE"
+        },
+        {
+          "modelIndex": 11,
+          "safeVisionClassId": "SV-PPE-015",
+          "className": "hands",
+          "displayName": "Anatomical Hands",
+          "category": "ANATOMICAL"
+        },
+        {
+          "modelIndex": 12,
+          "safeVisionClassId": "SV-PPE-012",
+          "className": "head",
+          "displayName": "Anatomical Head",
+          "category": "ANATOMICAL"
+        },
+        {
+          "modelIndex": 13,
+          "safeVisionClassId": "SV-PPE-010",
+          "className": "medical-suit",
+          "displayName": "Cleanroom / Medical Suit",
+          "category": "PPE"
+        },
+        {
+          "modelIndex": 14,
+          "safeVisionClassId": "SV-PPE-005",
+          "className": "shoes",
+          "displayName": "Safety Boots / Shoes",
+          "category": "PPE"
+        },
+        {
+          "modelIndex": 15,
+          "safeVisionClassId": "SV-PPE-011",
+          "className": "safety-suit",
+          "displayName": "Hazardous Material Protective Suit",
+          "category": "PPE"
+        },
+        {
+          "modelIndex": 16,
+          "safeVisionClassId": "SV-PPE-003",
+          "className": "safety-vest",
+          "displayName": "High-Visibility Safety Vest",
+          "category": "PPE"
+        }
+      ],
+      "addedClassIds": [],
+      "classList": [
+        "person",
+        "ear",
+        "ear-mufs",
+        "face",
+        "face-guard",
+        "face-mask",
+        "foot",
+        "tool",
+        "glasses",
+        "gloves",
+        "helmet",
+        "hands",
+        "head",
+        "medical-suit",
+        "shoes",
+        "safety-suit",
+        "safety-vest"
+      ],
+      "trainingDate": "2024-06-22T00:00:00Z",
+      "trainingConfig": {
+        "architecture": "yolov8n.pt",
+        "run_name": "safehuman_nano_v0_14",
+        "input_resolution": 640
+      },
+      "weightsChecksum": "sha256:5449f62bd7cf30c01c7fd138db2729a38abcb4d5120449773fba475d54f30b62",
+      "modelHash": "sha256:5449f62bd7cf30c01c7fd138db2729a38abcb4d5120449773fba475d54f30b62",
+      "sourceRepository": "https://github.com/ahmadmughees/SH17dataset",
+      "sourceCommit": "3a91b40",
+      "metrics": {},
+      "validationMetrics": {},
+      "regressionReport": null,
+      "evaluationReport": null,
+      "status": "PROTECTED_BASELINE",
+      "deploymentStatus": "PRETRAINED_EXTERNAL_SH17",
+      "commercialUsePermitted": false,
+      "licensingNotice": "Non-commercial research checkpoint. Protected baseline model; never overwritten.",
+      "modelPath": "ai/models/industrial_yolov8.pt",
+      "isProtected": true,
+      "protectedAt": "2026-10-06T00:00:00Z",
+      "activatedAt": null,
+      "activatedBy": null,
+      "createdAt": "2024-06-22T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z"
+    },
+    {
+      "modelId": "MODEL-PPE-SAFEVISION-V1",
+      "modelName": "SafeVision PPE Custom Candidate v1",
+      "modelVersion": "1.1.0-cand",
+      "parentModelId": null,
+      "modelType": "OBJECT_DETECTION_PPE",
+      "framework": "PyTorch / Ultralytics YOLOv8",
+      "datasetSources": [
+        "SafeVision Industrial PPE Curated Dataset"
+      ],
+      "datasetVersions": [
+        "1.0.0"
+      ],
+      "datasetLicenses": [
+        "Proprietary SafeVision AI"
+      ],
+      "datasetId": null,
+      "datasetHash": null,
+      "ontologyVersion": "1.0.0",
+      "classManifest": [],
+      "addedClassIds": [],
+      "classList": [],
+      "trainingDate": null,
+      "trainingConfig": {},
+      "weightsChecksum": null,
+      "modelHash": null,
+      "sourceRepository": null,
+      "sourceCommit": null,
+      "metrics": {},
+      "validationMetrics": {},
+      "regressionReport": null,
+      "evaluationReport": null,
+      "status": "CANDIDATE",
+      "deploymentStatus": "CANDIDATE",
+      "commercialUsePermitted": false,
+      "licensingNotice": "Internal candidate model under evaluation",
+      "modelPath": null,
+      "isProtected": false,
+      "protectedAt": null,
+      "activatedAt": null,
+      "activatedBy": null,
+      "createdAt": "2026-10-06T00:00:00Z",
+      "updatedAt": "2026-10-07T09:28:48.161952+00:00"
+    }
+  ]
+}

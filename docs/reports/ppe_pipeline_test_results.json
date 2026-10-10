@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "test_timestamp_utc": "2026-09-28T09:34:01Z",
+    "source_video": "ai/datasets/stock-footage-vertical-video-warehouse-employee-checks-construction-tools-near-heavy-metal-equipment-managing.webm",
+    "model_weights": "ai/models/industrial_yolov8.pt",
+    "weights_checksum": "sha256:5449f62bd7cf30c01c7fd138db2729a38abcb4d5120449773fba475d54f30b62",
+    "checksum_verified": true,
+    "hardware": {
+      "device": "cuda:0",
+      "gpu_name": "NVIDIA GeForce RTX 2050",
+      "cuda_version": "12.1",
+      "pytorch_version": "2.5.0+cu121",
+      "ultralytics_version": "8.4.164"
+    }
+  },
+  "video_properties": {
+    "resolution": "504x900",
+    "fps": 23.98,
+    "duration_seconds": 14.31,
+    "frame_count": 343
+  },
+  "yolo_detections_summary": {
+    "total_raw_detections": 2419,
+    "classes": {
+      "ear": {
+        "count": 729,
+        "min_conf": 0.25,
+        "max_conf": 0.902,
+        "avg_conf": 0.632
+      },
+      "glasses": {
+        "count": 344,
+        "min_conf": 0.292,
+        "max_conf": 0.818,
+        "avg_conf": 0.693
+      },
+      "person": {
+        "count": 343,
+        "min_conf": 0.883,
+        "max_conf": 0.956,
+        "avg_conf": 0.923
+      },
+      "face": {
+        "count": 343,
+        "min_conf": 0.865,
+        "max_conf": 0.936,
+        "avg_conf": 0.906
+      },
+      "head": {
+        "count": 343,
+        "min_conf": 0.807,
+        "max_conf": 0.901,
+        "avg_conf": 0.865
+      },
+      "hands": {
+        "count": 155,
+        "min_conf": 0.252,
+        "max_conf": 0.614,
+        "avg_conf": 0.393
+      },
+      "tool": {
+        "count": 71,
+        "min_conf": 0.278,
+        "max_conf": 0.813,
+        "avg_conf": 0.649
+      },
+      "ear-mufs": {
+        "count": 47,
+        "min_conf": 0.259,
+        "max_conf": 0.435,
+        "avg_conf": 0.343
+      },
+      "shoes": {
+        "count": 44,
+        "min_conf": 0.251,
+        "max_conf": 0.803,
+        "avg_conf": 0.515
+      },
+      "helmet": {
+        "count": 0,
+        "min_conf": 0.0,
+        "max_conf": 0.0,
+        "avg_conf": 0.0
+      },
+      "safety-vest": {
+        "count": 0,
+        "min_conf": 0.0,
+        "max_conf": 0.0,
+        "avg_conf": 0.0
+      }
+    }
+  },
+  "tracking_evaluation": {
+    "unique_tracks_count": 1,
+    "track_ids": [
+      "TRACK-001001"
+    ],
+    "track_frame_counts": {
+      "TRACK-001001": 343
+    },
+    "track_continuity_ratio": 1.0,
+    "stable_tracks_count": 1
+  },
+  "ppe_association_results": {
+    "tracked_worker": "TRACK-001001",
+    "helmet": {
+      "status_breakdown": {
+        "PRESENT": 0,
+        "MISSING": 343,
+        "UNKNOWN": 0
+      },
+      "majority_status": "MISSING",
+      "reasoning": "Head observed with conf ~0.865 and face ~0.906; top boundary not truncated (ymin > 2.0%); no helmet detected."
+    },
+    "safety_vest": {
+      "status_breakdown": {
+        "PRESENT": 0,
+        "MISSING": 4,
+        "UNKNOWN": 339
+      },
+      "majority_status": "UNKNOWN",
+      "reasoning": "Model failed to detect safety-vest (0 detections); lower boundary truncated (ymax >= 98.0%) causing torso visibility condition to fail and default to UNKNOWN in 339 frames."
+    },
+    "glasses": {
+      "detection_count": 344,
+      "average_confidence": 0.693,
+      "notes": "Detected in every frame by YOLOv8 model; used as anatomical evidence of visible head/face in ppe_association.py."
+    },
+    "gloves": {
+      "status_breakdown": {
+        "PRESENT": 0,
+        "MISSING": 147,
+        "UNKNOWN": 196
+      }
+    },
+    "shoes": {
+      "status_breakdown": {
+        "PRESENT": 44,
+        "MISSING": 0,
+        "UNKNOWN": 299
+      }
+    }
+  },
+  "temporal_validation_results": {
+    "offline_video_script": {
+      "state": "POSSIBLE_VIOLATION",
+      "violation_duration_sec": -1790588076.46,
+      "incident_candidates_count": 0,
+      "cause": "In validate_real_video.py, frame 0 timestamp is 0.0s. Python falsy evaluation (0.0 or time.time()) sets first_violation_time to epoch time (~1.79e9), causing subsequent frame duration to stay negative."
+    },
+    "realtime_paced_streaming": {
+      "state": "INCIDENT_CREATED -> COOLING_DOWN",
+      "violation_duration_sec": 3.34,
+      "incident_candidates_count": 1,
+      "generated_candidate": {
+        "track_id": "TRACK-001001",
+        "violation_type": "missing_helmet",
+        "severity": "high",
+        "confidence": 0.923,
+        "rule_id": "RULE-PPE-MISSING_HELMET"
+      }
+    }
+  },
+  "incident_lifecycle_verification": {
+    "candidate_generated": true,
+    "backend_authoritative_ingestion": true,
+    "in_memory_store_updated": true,
+    "written_to_mongodb": false,
+    "mongodb_incidents_count_before": 0,
+    "mongodb_incidents_count_after": 0,
+    "mongodb_change_streams_triggered": false,
+    "socketio_delivered_to_clients": true,
+    "socketio_delivery_mechanism": "Direct process-memory broadcast from detection route (socketService.emitNewIncident and emitRealtimeEvent)",
+    "socketio_events_received": [
+      "incident:new",
+      "incident.created"
+    ]
+  },
+  "performance_metrics": {
+    "processing_wall_time_sec": 8.05,
+    "processing_fps": 42.58,
+    "average_inference_latency_ms": 15.63,
+    "p95_inference_latency_ms": 23.41
+  },
+  "artifacts": {
+    "annotated_video": "annotated_real_video.mp4",
+    "analytics_json": "video_validation_analytics.json",
+    "comprehensive_results_json": "ppe_pipeline_test_results.json"
+  }
+}

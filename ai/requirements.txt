@@ -1,0 +1,14 @@
+# SafeVision AI - Python 3.11 Production Dependency Set
+# For CUDA acceleration with PyTorch 2.5.0:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+torch>=2.5.0
+torchvision>=0.20.0
+ultralytics>=8.4.0
+opencv-python>=4.9.0
+numpy>=1.26.0
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+python-multipart>=0.0.9
+requests>=2.31.0
+PyYAML>=6.0.1

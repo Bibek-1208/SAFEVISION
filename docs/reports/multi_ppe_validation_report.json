@@ -1,0 +1,88 @@
+[
+  {
+    "test_name": "Warehouse Worker (Bare head, safety glasses)",
+    "video": "ai\\datasets\\stock-footage-vertical-video-warehouse-employee-checks-construction-tools-near-heavy-metal-equipment-managing.webm",
+    "resolution": "504x900",
+    "fps": 23.98,
+    "frames_analyzed": 120,
+    "helmet_state": {
+      "MISSING": 120
+    },
+    "glasses_state": {
+      "PRESENT": 120
+    },
+    "vest_state": {
+      "UNKNOWN": 120
+    },
+    "gloves_state": {
+      "UNKNOWN": 103,
+      "MISSING": 17
+    },
+    "top_detections": {
+      "ear": 258,
+      "person": 120,
+      "face": 120,
+      "head": 120,
+      "glasses": 120,
+      "tool": 71
+    }
+  },
+  {
+    "test_name": "Industrial 1080p Worker (Helmet & Vest, Bare hands)",
+    "video": "server\\uploads\\upload-1790575202797-930871458.mp4",
+    "resolution": "1920x1080",
+    "fps": 23.98,
+    "frames_analyzed": 120,
+    "helmet_state": {
+      "PRESENT": 124,
+      "MISSING": 64,
+      "UNKNOWN": 52
+    },
+    "vest_state": {
+      "UNKNOWN": 4,
+      "PRESENT": 236
+    },
+    "gloves_state": {
+      "MISSING": 175,
+      "PRESENT": 14,
+      "UNKNOWN": 51
+    },
+    "top_detections": {
+      "ear": 247,
+      "person": 241,
+      "safety-vest": 236,
+      "hands": 219,
+      "head": 206,
+      "helmet": 124
+    }
+  },
+  {
+    "test_name": "Industrial 1080p Worker (High PPE Compliance)",
+    "video": "server\\uploads\\upload-1790575261766-911108119.mp4",
+    "resolution": "1920x1080",
+    "fps": 29.97,
+    "frames_analyzed": 120,
+    "helmet_state": {
+      "PRESENT": 129,
+      "UNKNOWN": 50,
+      "MISSING": 13
+    },
+    "vest_state": {
+      "PRESENT": 134,
+      "UNKNOWN": 40,
+      "MISSING": 18
+    },
+    "shoes_state": {
+      "PRESENT": 59,
+      "UNKNOWN": 133
+    },
+    "top_detections": {
+      "person": 233,
+      "head": 190,
+      "safety-vest": 143,
+      "shoes": 131,
+      "helmet": 127,
+      "face": 72
+    }
+  }
+]

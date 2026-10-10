@@ -1,0 +1,246 @@
+{
+  "step5": {
+    "source_fps": 24.0,
+    "received_fps": 32.29,
+    "processed_fps": 18.99,
+    "dropped_frames": 67,
+    "processed_frames": 100,
+    "frame_age_ms": {
+      "avg": 21.59,
+      "p50": 20.5,
+      "p95": 40.88
+    },
+    "latency_ms": {
+      "avg": 50.07,
+      "p50": 50.52,
+      "p95": 64.37
+    },
+    "cpu_util_pct": 82.4,
+    "gpu_memory_mb": 11.55,
+    "comparison": {
+      "legacy_http_baseline_fps": 4.91,
+      "optimized_http_baseline_fps": 10.84,
+      "direct_rtsp_achieved_fps": 18.99,
+      "speedup_vs_legacy_http": "3.87x",
+      "speedup_vs_optimized_http": "1.75x"
+    }
+  },
+  "step6": {
+    "camera_count": 2,
+    "total_received": 273,
+    "total_processed": 95,
+    "total_dropped": 176,
+    "aggregate_fps": 11.87,
+    "frame_age_ms": {
+      "avg": 16.79,
+      "p50": 14.92,
+      "p95": 37.44
+    },
+    "latency_ms": {
+      "avg": 81.32,
+      "p50": 72.86,
+      "p95": 146.28
+    },
+    "hardware": {
+      "cpu_util_pct": 71.7,
+      "ram_used_pct": 97.1,
+      "gpu_allocated_mb": 11.55
+    },
+    "cameras": {
+      "CAM-01": {
+        "source_fps": 24.0,
+        "received_frames": 166,
+        "processed_frames": 79,
+        "dropped_frames": 85,
+        "fps": 9.87,
+        "frame_age_ms": {
+          "avg": 17.87,
+          "p50": 16.32,
+          "p95": 37.7
+        },
+        "latency_ms": {
+          "avg": 73.03,
+          "p50": 62.88,
+          "p95": 141.1
+        },
+        "is_connected": true,
+        "candidates_created": 1
+      },
+      "CAM-02": {
+        "source_fps": 24.0,
+        "received_frames": 107,
+        "processed_frames": 16,
+        "dropped_frames": 91,
+        "fps": 2.0,
+        "frame_age_ms": {
+          "avg": 11.43,
+          "p50": 10.09,
+          "p95": 23.96
+        },
+        "latency_ms": {
+          "avg": 122.22,
+          "p50": 100.73,
+          "p95": 224.63
+        },
+        "is_connected": true,
+        "candidates_created": 0
+      }
+    }
+  },
+  "step7": {
+    "camera_count": 4,
+    "total_received": 712,
+    "total_processed": 103,
+    "total_dropped": 606,
+    "aggregate_fps": 12.84,
+    "frame_age_ms": {
+      "avg": 52.99,
+      "p50": 30.86,
+      "p95": 179.83
+    },
+    "latency_ms": {
+      "avg": 75.15,
+      "p50": 59.39,
+      "p95": 177.67
+    },
+    "hardware": {
+      "cpu_util_pct": 79.3,
+      "ram_used_pct": 97.7,
+      "gpu_allocated_mb": 35.5
+    },
+    "cameras": {
+      "CAM-01": {
+        "source_fps": 24.0,
+        "received_frames": 286,
+        "processed_frames": 49,
+        "dropped_frames": 236,
+        "fps": 6.11,
+        "frame_age_ms": {
+          "avg": 38.23,
+          "p50": 26.37,
+          "p95": 131.25
+        },
+        "latency_ms": {
+          "avg": 80.52,
+          "p50": 61.1,
+          "p95": 172.76
+        },
+        "is_connected": true,
+        "candidates_created": 1
+      },
+      "CAM-02": {
+        "source_fps": 24.0,
+        "received_frames": 213,
+        "processed_frames": 32,
+        "dropped_frames": 179,
+        "fps": 3.99,
+        "frame_age_ms": {
+          "avg": 65.08,
+          "p50": 25.96,
+          "p95": 199.76
+        },
+        "latency_ms": {
+          "avg": 76.57,
+          "p50": 57.87,
+          "p95": 236.82
+        },
+        "is_connected": true,
+        "candidates_created": 0
+      },
+      "CAM-03": {
+        "source_fps": 24.0,
+        "received_frames": 0,
+        "processed_frames": 0,
+        "dropped_frames": 0,
+        "fps": 0.0,
+        "frame_age_ms": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "latency_ms": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "is_connected": true,
+        "candidates_created": 0
+      },
+      "CAM-04": {
+        "source_fps": 24.0,
+        "received_frames": 213,
+        "processed_frames": 22,
+        "dropped_frames": 191,
+        "fps": 2.74,
+        "frame_age_ms": {
+          "avg": 68.3,
+          "p50": 61.04,
+          "p95": 134.28
+        },
+        "latency_ms": {
+          "avg": 61.1,
+          "p50": 53.48,
+          "p95": 92.98
+        },
+        "is_connected": true,
+        "candidates_created": 0
+      }
+    }
+  },
+  "step8": {
+    "distinct_tracker_instances": true,
+    "cam1_tracks_observed": [
+      "TRACK-001001"
+    ],
+    "cam2_tracks_observed": [
+      "TRACK-002003",
+      "TRACK-002001",
+      "TRACK-002002"
+    ],
+    "track_overlap": [],
+    "cam1_incidents_generated": 1,
+    "cam2_incidents_generated": 0,
+    "temporal_states_cam1": 0,
+    "temporal_states_cam2": 0,
+    "zero_cross_talk": true,
+    "only_violating_camera_alerted": true
+  },
+  "step9": {
+    "initial_connected": true,
+    "initial_frames_received": 10,
+    "disconnect_detected": true,
+    "reconnect_successful": true,
+    "reconnect_frames_received": 10,
+    "total_reconnect_cycles": 2,
+    "status": "PASS"
+  },
+  "step10": {
+    "incident_id": null,
+    "stages_ms": {
+      "1_frame_age_rtsp_read_ms": 13.5,
+      "2_yolo_neural_inference_ms": 48.72,
+      "3_bytetrack_and_ppe_eval_ms": 1.25,
+      "4_temporal_persistence_safety_window_sec": 2.97,
+      "5_structured_incident_http_post_ms": 46.3,
+      "6_mongodb_persist_change_stream_socketio_ms": 49.56
+    },
+    "pure_ai_processing_latency_per_frame_ms": 49.97,
+    "alert_emission_after_temporal_confirmation_ms": 95.86,
+    "total_time_from_first_violation_to_dashboard_alert_sec": 3.07
+  },
+  "step12": {
+    "1_missing_helmet_detected": "VERIFIED",
+    "2_helmet_present_compliant": "VERIFIED",
+    "3_unknown_preserved": "VERIFIED",
+    "4_temporal_persistence_enforced": "VERIFIED",
+    "5_duplicate_prevention_works": "VERIFIED",
+    "6_mongodb_persisted": "VERIFIED",
+    "7_change_stream_fires": "VERIFIED",
+    "8_socketio_fires": "VERIFIED",
+    "9_rtsp_disconnect_handled": "VERIFIED",
+    "10_rtsp_reconnect_works": "VERIFIED",
+    "11_multi_camera_tracker_isolation": "VERIFIED",
+    "12_camera_specific_temporal_state": "VERIFIED",
+    "13_camera_specific_cooldown": "VERIFIED"
+  }
+}

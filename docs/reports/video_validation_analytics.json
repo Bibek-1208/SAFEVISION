@@ -1,0 +1,56 @@
+{
+  "status": "COMPLETED",
+  "timestamp": "2026-09-28T09:53:40Z",
+  "source_video": "c:\\Users\\bibek\\Desktop\\SAFEVISION\\ai\\datasets\\stock-footage-vertical-video-warehouse-employee-checks-construction-tools-near-heavy-metal-equipment-managing.webm",
+  "source_fps": 23.98,
+  "video_resolution": "504x900",
+  "processed_frames": 343,
+  "processing_wall_time_sec": 8.69,
+  "processing_fps": 39.46,
+  "average_inference_latency_ms": 16.76,
+  "p95_inference_latency_ms": 33.07,
+  "total_video_duration_sec": 14.31,
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA GeForce RTX 2050",
+  "total_raw_detections": 2419,
+  "number_of_unique_tracks": 1,
+  "stable_tracks_count": 1,
+  "track_frame_counts": {
+    "TRACK-001001": 343
+  },
+  "ppe_states_summary": {
+    "helmet": {
+      "PRESENT": 0,
+      "MISSING": 343,
+      "UNKNOWN": 0
+    },
+    "safety-vest": {
+      "PRESENT": 0,
+      "MISSING": 4,
+      "UNKNOWN": 339
+    },
+    "gloves": {
+      "PRESENT": 0,
+      "MISSING": 147,
+      "UNKNOWN": 196
+    },
+    "shoes": {
+      "PRESENT": 44,
+      "MISSING": 0,
+      "UNKNOWN": 299
+    }
+  },
+  "temporally_confirmed_violations_count": 271,
+  "incident_candidates_count": 1,
+  "incident_candidates": [
+    {
+      "track_id": "TRACK-001001",
+      "violation_type": "NO_HELMET",
+      "frame": 72,
+      "timestamp_sec": 3.0,
+      "confidence": 0.9352355003356934,
+      "rule_id": "RULE-NO_HELMET-FACTORY"
+    }
+  ],
+  "output_video": "annotated_real_video.mp4"
+}

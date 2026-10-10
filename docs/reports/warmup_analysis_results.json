@@ -1,0 +1,11 @@
+{
+  "cold_start_frame1_latency_ms": 160.68,
+  "cold_start_init_overhead_ms": 4920.53,
+  "steady_state_latency_ms": 18.75,
+  "steady_state_p50_ms": 18.61,
+  "steady_state_p95_ms": 23.97,
+  "steady_state_max_ms": 24.38,
+  "cold_start_run_fps": 47.08,
+  "steady_state_fps": 53.3,
+  "warmup_speedup_factor": 8.57
+}

@@ -1,0 +1,49 @@
+# SafeVision AI — Industrial PPE & Hazard Dataset Configuration
+# Standard Ultralytics YOLO format
+
+path: ./datasets/industrial_ppe
+train: images/train
+val: images/val
+test: images/test
+
+# 14 Industrial Safety Classes
+names:
+  0: person
+  1: helmet
+  2: no_helmet
+  3: safety_vest
+  4: no_safety_vest
+  5: gloves
+  6: no_gloves
+  7: safety_shoes
+  8: no_safety_shoes
+  9: smoke
+  10: fire
+  11: worker_fall
+  12: restricted_zone_breach
+  13: unsafe_crowd
+
+# Training Hyperparameters
+hyperparameters:
+  imgsz: 640
+  epochs: 50
+  batch_size: 16
+  learning_rate: 0.01
+  momentum: 0.937
+  weight_decay: 0.0005
+  confidence_threshold: 0.45
+  iou_threshold: 0.50
+  workers: 4
+  optimizer: AdamW
+  augmentations:
+    hsv_h: 0.015
+    hsv_s: 0.7
+    hsv_v: 0.4
+    degrees: 0.0
+    translate: 0.1
+    scale: 0.5
+    shear: 0.0
+    perspective: 0.0
+    flipud: 0.0
+    fliplr: 0.5
+    mosaic: 1.0

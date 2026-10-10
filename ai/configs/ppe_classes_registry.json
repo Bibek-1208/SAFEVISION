@@ -1,0 +1,325 @@
+{
+  "version": "1.0.0",
+  "name": "SafeVision Authoritative PPE Class Registry",
+  "classes": [
+    {
+      "id": "SV-PPE-001",
+      "name": "person",
+      "displayName": "Person",
+      "category": "PERSON",
+      "description": "Worker / human individual on site",
+      "aliases": [
+        "worker",
+        "human",
+        "employee",
+        "pedestrian",
+        "personnel"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Worker / Human Individual"
+    },
+    {
+      "id": "SV-PPE-002",
+      "name": "helmet",
+      "displayName": "Hard Hat / Helmet",
+      "category": "PPE",
+      "description": "Industrial hard hat or safety helmet",
+      "aliases": [
+        "hard hat",
+        "hard-hat",
+        "hardhat",
+        "safety helmet",
+        "safety-helmet",
+        "head protection"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Head Protection"
+    },
+    {
+      "id": "SV-PPE-003",
+      "name": "safety-vest",
+      "displayName": "High-Visibility Safety Vest",
+      "category": "PPE",
+      "description": "Reflective high-visibility safety vest or jacket",
+      "aliases": [
+        "vest",
+        "hi-vis",
+        "hi-vis vest",
+        "safety vest",
+        "reflective vest",
+        "high-vis vest"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Body Protection"
+    },
+    {
+      "id": "SV-PPE-004",
+      "name": "gloves",
+      "displayName": "Protective Gloves",
+      "category": "PPE",
+      "description": "Protective industrial work gloves",
+      "aliases": [
+        "glove",
+        "work gloves",
+        "safety gloves",
+        "hand protection"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Hand Protection"
+    },
+    {
+      "id": "SV-PPE-005",
+      "name": "shoes",
+      "displayName": "Safety Boots / Shoes",
+      "category": "PPE",
+      "description": "Steel-toe industrial boots or protective footwear",
+      "aliases": [
+        "safety shoes",
+        "safety boots",
+        "steel toe boots",
+        "boots",
+        "footwear"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Foot Protection"
+    },
+    {
+      "id": "SV-PPE-006",
+      "name": "glasses",
+      "displayName": "Safety Glasses / Goggles",
+      "category": "PPE",
+      "description": "Protective eyewear, safety glasses, or goggles",
+      "aliases": [
+        "goggles",
+        "safety glasses",
+        "eye protection",
+        "protective eyewear",
+        "spectacles"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Eye Protection"
+    },
+    {
+      "id": "SV-PPE-007",
+      "name": "face-mask",
+      "displayName": "Face / Dust Mask",
+      "category": "PPE",
+      "description": "Protective face mask or particulate respirator",
+      "aliases": [
+        "mask",
+        "dust mask",
+        "surgical mask",
+        "n95",
+        "respirator mask"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Respiratory Protection"
+    },
+    {
+      "id": "SV-PPE-008",
+      "name": "ear-mufs",
+      "displayName": "Hearing Protection / Ear Muffs",
+      "category": "PPE",
+      "description": "Noise-reducing industrial ear muffs or ear defenders",
+      "aliases": [
+        "earmuffs",
+        "ear muffs",
+        "ear protection",
+        "hearing protection",
+        "ear defenders"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Hearing Protection"
+    },
+    {
+      "id": "SV-PPE-009",
+      "name": "face-guard",
+      "displayName": "Face Shield / Guard",
+      "category": "PPE",
+      "description": "Full face protective impact or splash shield",
+      "aliases": [
+        "face shield",
+        "faceshield",
+        "protective shield",
+        "visor"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Face Protection"
+    },
+    {
+      "id": "SV-PPE-010",
+      "name": "medical-suit",
+      "displayName": "Cleanroom / Medical Suit",
+      "category": "PPE",
+      "description": "Medical, cleanroom, or biological protection coverall",
+      "aliases": [
+        "coverall",
+        "ppe suit",
+        "cleanroom suit",
+        "hazmat suit"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Body Protection"
+    },
+    {
+      "id": "SV-PPE-011",
+      "name": "safety-suit",
+      "displayName": "Hazardous Material Protective Suit",
+      "category": "PPE",
+      "description": "Full chemical or hazardous material protection suit",
+      "aliases": [
+        "chemical suit",
+        "hazmat",
+        "boiler suit",
+        "protective suit"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Body Protection"
+    },
+    {
+      "id": "SV-PPE-012",
+      "name": "head",
+      "displayName": "Anatomical Head",
+      "category": "ANATOMICAL",
+      "description": "Human head region for helmet association",
+      "aliases": [
+        "bare head",
+        "human head"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Head"
+    },
+    {
+      "id": "SV-PPE-013",
+      "name": "face",
+      "displayName": "Anatomical Face",
+      "category": "ANATOMICAL",
+      "description": "Human face region for mask and eyewear association",
+      "aliases": [
+        "human face"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Face"
+    },
+    {
+      "id": "SV-PPE-014",
+      "name": "ear",
+      "displayName": "Anatomical Ear",
+      "category": "ANATOMICAL",
+      "description": "Human ear region for hearing protection association",
+      "aliases": [
+        "human ear"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Hearing Reference"
+    },
+    {
+      "id": "SV-PPE-015",
+      "name": "hands",
+      "displayName": "Anatomical Hands",
+      "category": "ANATOMICAL",
+      "description": "Human hands region for glove association",
+      "aliases": [
+        "human hands",
+        "bare hands"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Hands"
+    },
+    {
+      "id": "SV-PPE-016",
+      "name": "foot",
+      "displayName": "Anatomical Foot",
+      "category": "ANATOMICAL",
+      "description": "Human foot region for footwear association",
+      "aliases": [
+        "human foot",
+        "feet"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Feet"
+    },
+    {
+      "id": "SV-PPE-017",
+      "name": "tool",
+      "displayName": "Industrial Tool",
+      "category": "EQUIPMENT",
+      "description": "Handheld tool or industrial apparatus",
+      "aliases": [
+        "equipment",
+        "hand tool",
+        "power tool"
+      ],
+      "active": true,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Hand Tool"
+    },
+    {
+      "id": "SV-PPE-018",
+      "name": "lab-coat",
+      "displayName": "Laboratory Coat",
+      "category": "PPE",
+      "description": "Specialized protective lab coverall / coat",
+      "aliases": [
+        "labcoat",
+        "white coat",
+        "laboratory coat"
+      ],
+      "active": true,
+      "status": "NO_TRAINING_DATA",
+      "createdAt": "2026-10-06T00:00:00Z",
+      "updatedAt": "2026-10-06T00:00:00Z",
+      "subCategory": "Body Protection"
+    }
+  ]
+}

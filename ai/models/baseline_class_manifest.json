@@ -1,0 +1,130 @@
+{
+  "modelVersion": "1.0.0-sh17",
+  "modelId": "MODEL-PPE-BASELINE-SH17",
+  "modelName": "Baseline Industrial PPE Detector (External SH17)",
+  "framework": "PyTorch / Ultralytics YOLOv8n",
+  "weightsFile": "industrial_yolov8.pt",
+  "weightsChecksum": "sha256:5449f62bd7cf30c01c7fd138db2729a38abcb4d5120449773fba475d54f30b62",
+  "totalClasses": 17,
+  "classManifest": [
+    {
+      "modelIndex": 0,
+      "safeVisionClassId": "SV-PPE-001",
+      "className": "person",
+      "displayName": "Person",
+      "category": "PERSON"
+    },
+    {
+      "modelIndex": 1,
+      "safeVisionClassId": "SV-PPE-014",
+      "className": "ear",
+      "displayName": "Anatomical Ear",
+      "category": "ANATOMICAL"
+    },
+    {
+      "modelIndex": 2,
+      "safeVisionClassId": "SV-PPE-008",
+      "className": "ear-mufs",
+      "displayName": "Hearing Protection / Ear Muffs",
+      "category": "PPE"
+    },
+    {
+      "modelIndex": 3,
+      "safeVisionClassId": "SV-PPE-013",
+      "className": "face",
+      "displayName": "Anatomical Face",
+      "category": "ANATOMICAL"
+    },
+    {
+      "modelIndex": 4,
+      "safeVisionClassId": "SV-PPE-009",
+      "className": "face-guard",
+      "displayName": "Face Shield / Guard",
+      "category": "PPE"
+    },
+    {
+      "modelIndex": 5,
+      "safeVisionClassId": "SV-PPE-007",
+      "className": "face-mask",
+      "displayName": "Face / Dust Mask",
+      "category": "PPE"
+    },
+    {
+      "modelIndex": 6,
+      "safeVisionClassId": "SV-PPE-016",
+      "className": "foot",
+      "displayName": "Anatomical Foot",
+      "category": "ANATOMICAL"
+    },
+    {
+      "modelIndex": 7,
+      "safeVisionClassId": "SV-PPE-017",
+      "className": "tool",
+      "displayName": "Industrial Tool",
+      "category": "EQUIPMENT"
+    },
+    {
+      "modelIndex": 8,
+      "safeVisionClassId": "SV-PPE-006",
+      "className": "glasses",
+      "displayName": "Safety Glasses / Goggles",
+      "category": "PPE"
+    },
+    {
+      "modelIndex": 9,
+      "safeVisionClassId": "SV-PPE-004",
+      "className": "gloves",
+      "displayName": "Protective Gloves",
+      "category": "PPE"
+    },
+    {
+      "modelIndex": 10,
+      "safeVisionClassId": "SV-PPE-002",
+      "className": "helmet",
+      "displayName": "Hard Hat / Helmet",
+      "category": "PPE"
+    },
+    {
+      "modelIndex": 11,
+      "safeVisionClassId": "SV-PPE-015",
+      "className": "hands",
+      "displayName": "Anatomical Hands",
+      "category": "ANATOMICAL"
+    },
+    {
+      "modelIndex": 12,
+      "safeVisionClassId": "SV-PPE-012",
+      "className": "head",
+      "displayName": "Anatomical Head",
+      "category": "ANATOMICAL"
+    },
+    {
+      "modelIndex": 13,
+      "safeVisionClassId": "SV-PPE-010",
+      "className": "medical-suit",
+      "displayName": "Cleanroom / Medical Suit",
+      "category": "PPE"
+    },
+    {
+      "modelIndex": 14,
+      "safeVisionClassId": "SV-PPE-005",
+      "className": "shoes",
+      "displayName": "Safety Boots / Shoes",
+      "category": "PPE"
+    },
+    {
+      "modelIndex": 15,
+      "safeVisionClassId": "SV-PPE-011",
+      "className": "safety-suit",
+      "displayName": "Hazardous Material Protective Suit",
+      "category": "PPE"
+    },
+    {
+      "modelIndex": 16,
+      "safeVisionClassId": "SV-PPE-003",
+      "className": "safety-vest",
+      "displayName": "High-Visibility Safety Vest",
+      "category": "PPE"
+    }
+  ]
+}

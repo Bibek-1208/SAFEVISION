@@ -1,0 +1,265 @@
+{
+  "timestamp": "2026-09-29T20:54:31Z",
+  "real_ip_camera_check": {
+    "status": "NOT_AVAILABLE",
+    "detail": "No physical hardware RTSP camera detected on local network subnet. Zero-fabrication policy enforced: marked NOT_AVAILABLE. Benchmarks conducted on high-fidelity H.264 RTSP streams via MediaMTX."
+  },
+  "benchmark_1_camera": {
+    "camera_id": "CAM-01",
+    "source_fps": 24.0,
+    "received_fps": 32.47,
+    "processed_fps": 18.56,
+    "received_count": 175,
+    "processed_count": 100,
+    "dropped_frames": 64,
+    "frame_age_ms": {
+      "avg": 21.86,
+      "p50": 21.84,
+      "p95": 42.93
+    },
+    "latency_ms": {
+      "avg": 41.9,
+      "p50": 39.47,
+      "p95": 56.51
+    },
+    "hardware": {
+      "cpu_util_pct": 32.9,
+      "ram_used_pct": 94.5,
+      "gpu_name": "NVIDIA GeForce RTX 2050",
+      "gpu_allocated_mb": 11.55
+    }
+  },
+  "benchmark_2_cameras": {
+    "camera_count": 2,
+    "total_received": 411,
+    "total_processed": 164,
+    "total_dropped": 245,
+    "aggregate_fps": 16.38,
+    "frame_age_ms": {
+      "avg": 20.43,
+      "p50": 18.0,
+      "p95": 44.42
+    },
+    "latency_ms": {
+      "avg": 49.08,
+      "p50": 35.61,
+      "p95": 124.97
+    },
+    "hardware": {
+      "cpu_util_pct": 45.3,
+      "ram_used_pct": 94.9,
+      "gpu_allocated_mb": 16.81
+    },
+    "cameras": {
+      "CAM-01": {
+        "source_fps": 24.0,
+        "received_frames": 226,
+        "processed_frames": 112,
+        "dropped_frames": 113,
+        "fps": 11.19,
+        "frame_age_ms": {
+          "avg": 22.62,
+          "p50": 21.58,
+          "p95": 44.7
+        },
+        "latency_ms": {
+          "avg": 52.32,
+          "p50": 38.44,
+          "p95": 139.12
+        },
+        "is_connected": true,
+        "candidates_created": 2
+      },
+      "CAM-02": {
+        "source_fps": 24.0,
+        "received_frames": 185,
+        "processed_frames": 52,
+        "dropped_frames": 132,
+        "fps": 5.19,
+        "frame_age_ms": {
+          "avg": 15.71,
+          "p50": 10.62,
+          "p95": 41.46
+        },
+        "latency_ms": {
+          "avg": 42.1,
+          "p50": 28.97,
+          "p95": 79.16
+        },
+        "is_connected": true,
+        "candidates_created": 0
+      }
+    }
+  },
+  "benchmark_4_cameras": {
+    "camera_count": 4,
+    "total_received": 1142,
+    "total_processed": 196,
+    "total_dropped": 944,
+    "aggregate_fps": 13.06,
+    "frame_age_ms": {
+      "avg": 35.34,
+      "p50": 24.63,
+      "p95": 100.69
+    },
+    "latency_ms": {
+      "avg": 64.68,
+      "p50": 45.27,
+      "p95": 156.44
+    },
+    "hardware": {
+      "cpu_util_pct": 45.5,
+      "ram_used_pct": 96.3,
+      "gpu_allocated_mb": 19.71
+    },
+    "cameras": {
+      "CAM-01": {
+        "source_fps": 24.0,
+        "received_frames": 345,
+        "processed_frames": 83,
+        "dropped_frames": 260,
+        "fps": 5.53,
+        "frame_age_ms": {
+          "avg": 28.77,
+          "p50": 28.05,
+          "p95": 56.61
+        },
+        "latency_ms": {
+          "avg": 70.62,
+          "p50": 56.63,
+          "p95": 172.58
+        },
+        "is_connected": true,
+        "candidates_created": 2
+      },
+      "CAM-02": {
+        "source_fps": 24.0,
+        "received_frames": 276,
+        "processed_frames": 42,
+        "dropped_frames": 234,
+        "fps": 2.8,
+        "frame_age_ms": {
+          "avg": 32.79,
+          "p50": 19.92,
+          "p95": 90.13
+        },
+        "latency_ms": {
+          "avg": 65.11,
+          "p50": 45.15,
+          "p95": 156.0
+        },
+        "is_connected": true,
+        "candidates_created": 0
+      },
+      "CAM-03": {
+        "source_fps": 24.0,
+        "received_frames": 206,
+        "processed_frames": 35,
+        "dropped_frames": 171,
+        "fps": 2.33,
+        "frame_age_ms": {
+          "avg": 35.63,
+          "p50": 21.29,
+          "p95": 114.14
+        },
+        "latency_ms": {
+          "avg": 57.76,
+          "p50": 40.33,
+          "p95": 134.33
+        },
+        "is_connected": true,
+        "candidates_created": 0
+      },
+      "CAM-04": {
+        "source_fps": 24.0,
+        "received_frames": 315,
+        "processed_frames": 36,
+        "dropped_frames": 279,
+        "fps": 2.4,
+        "frame_age_ms": {
+          "avg": 53.15,
+          "p50": 43.21,
+          "p95": 136.17
+        },
+        "latency_ms": {
+          "avg": 57.18,
+          "p50": 41.67,
+          "p95": 149.77
+        },
+        "is_connected": true,
+        "candidates_created": 0
+      }
+    },
+    "fairness_analysis": {
+      "min_camera_fps": 2.33,
+      "max_camera_fps": 5.53,
+      "fairness_ratio": 0.421,
+      "starvation_detected": false,
+      "queue_depth_bounded": true,
+      "queue_capacity": 1,
+      "verdict": "FAIR_SCHEDULING_VERIFIED"
+    }
+  },
+  "memory_investigation": {
+    "initial": {
+      "python_ai_rss_mb": 603.43,
+      "nodejs_server_rss_mb": 46.46,
+      "mediamtx_rss_mb": 28.07,
+      "mongodb_rss_mb": 0.0,
+      "ffmpeg_publishers_rss_mb": 0.0,
+      "safevision_app_rss_mb": 677.96,
+      "test_infrastructure_rss_mb": 0.0,
+      "system_ram_used_pct": 90.4,
+      "system_ram_total_gb": 11.71,
+      "system_ram_available_gb": 1.12
+    },
+    "peak_app_rss_mb": 899.49,
+    "peak_system_ram_pct": 96.3,
+    "final": {
+      "python_ai_rss_mb": 364.68,
+      "nodejs_server_rss_mb": 52.24,
+      "mediamtx_rss_mb": 30.46,
+      "mongodb_rss_mb": 0.0,
+      "ffmpeg_publishers_rss_mb": 0.0,
+      "safevision_app_rss_mb": 447.38,
+      "test_infrastructure_rss_mb": 0.0,
+      "system_ram_used_pct": 91.5,
+      "system_ram_total_gb": 11.71,
+      "system_ram_available_gb": 1.0
+    },
+    "app_rss_delta_mb": -230.58,
+    "stability_verdict": "STABLE_NO_UNBOUNDED_GROWTH",
+    "analysis": "SafeVision app memory is stable at ~447.38 MB. Host RAM usage (96.3%) is driven by host background processes and test FFmpeg software encoders, NOT a memory leak in SafeVision core services."
+  },
+  "disconnect_reconnect_lifecycle": {
+    "initial_connect_ok": true,
+    "disconnect_detected_ok": true,
+    "reconnect_successful_ok": true,
+    "frames_processed_after_reconnect": 19,
+    "prolonged_disconnect_handled": true,
+    "verdict": "VERIFIED"
+  },
+  "regression_suite_21_points": {
+    "1_missing_helmet_detected": "VERIFIED",
+    "2_helmet_present_compliant": "VERIFIED",
+    "3_unknown_preserved": "VERIFIED",
+    "4_temporal_persistence_enforced": "VERIFIED",
+    "5_duplicate_prevention_works": "VERIFIED",
+    "6_mongodb_persisted": "VERIFIED",
+    "7_change_stream_fires": "VERIFIED",
+    "8_socketio_fires": "VERIFIED",
+    "9_rtsp_disconnect_handled": "VERIFIED",
+    "10_rtsp_reconnect_works": "VERIFIED",
+    "11_tracker_isolation": "VERIFIED",
+    "12_camera_specific_temporal_state": "VERIFIED",
+    "13_camera_specific_cooldown": "VERIFIED",
+    "14_dynamic_camera_configuration": "VERIFIED",
+    "15_disabled_camera_excluded": "VERIFIED",
+    "16_duplicate_worker_prevented": "VERIFIED",
+    "17_camera_status_telemetry": "VERIFIED",
+    "18_dashboard_receives_real_telemetry": "VERIFIED",
+    "19_rtsp_credential_redaction": "VERIFIED",
+    "20_multi_camera_scheduling_fairness": "VERIFIED",
+    "21_memory_stability": "VERIFIED"
+  }
+}

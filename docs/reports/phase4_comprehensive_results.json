@@ -1,0 +1,95 @@
+{
+  "section_4_sampling": {
+    "5_FPS": {
+      "requested_sampling_fps": 5,
+      "actual_received_fps": 4.85,
+      "actual_processed_fps": 4.85,
+      "frames_processed": 25,
+      "dropped_frames": 0,
+      "estimated_queue_backlog_frames": 98,
+      "average_latency_ms": 129.87,
+      "cpu_utilization_pct": 37.6,
+      "gpu_utilization_pct": 32.7,
+      "gpu_memory_mb": 272.5
+    },
+    "10_FPS": {
+      "requested_sampling_fps": 10,
+      "actual_received_fps": 9.32,
+      "actual_processed_fps": 9.32,
+      "frames_processed": 25,
+      "dropped_frames": 0,
+      "estimated_queue_backlog_frames": 39,
+      "average_latency_ms": 94.85,
+      "cpu_utilization_pct": 51.7,
+      "gpu_utilization_pct": 35.9,
+      "gpu_memory_mb": 272.5
+    },
+    "15_FPS": {
+      "requested_sampling_fps": 15,
+      "actual_received_fps": 10.75,
+      "actual_processed_fps": 10.75,
+      "frames_processed": 25,
+      "dropped_frames": 0,
+      "estimated_queue_backlog_frames": 30,
+      "average_latency_ms": 91.63,
+      "cpu_utilization_pct": 47.9,
+      "gpu_utilization_pct": 33.2,
+      "gpu_memory_mb": 272.5
+    },
+    "24_FPS": {
+      "requested_sampling_fps": 24,
+      "actual_received_fps": 10.52,
+      "actual_processed_fps": 10.52,
+      "frames_processed": 25,
+      "dropped_frames": 0,
+      "estimated_queue_backlog_frames": 32,
+      "average_latency_ms": 94.26,
+      "cpu_utilization_pct": 43.1,
+      "gpu_utilization_pct": 48.8,
+      "gpu_memory_mb": 272.5
+    }
+  },
+  "section_5_direct_vs_api": {
+    "direct_inprocess_fps": 35.29,
+    "direct_inprocess_avg_latency_ms": 28.33,
+    "direct_inprocess_p50_ms": 20.67,
+    "direct_inprocess_p95_ms": 40.07,
+    "http_api_fps": 5.63,
+    "http_api_avg_latency_ms": 177.77,
+    "http_api_p50_ms": 189.62,
+    "http_api_p95_ms": 313.95,
+    "http_serialization_network_overhead_ms": 149.44,
+    "throughput_loss_percentage": 84.0
+  },
+  "section_6_buffering": {
+    "operating_mode": "HIGH LATENCY / BUFFERED",
+    "initial_frame_lag_sec": 0.04,
+    "final_frame_lag_sec": 4.38,
+    "lag_growth_per_frame_sec": 0.145,
+    "frames_accumulating": true,
+    "stale_frames_processed": true,
+    "root_cause": "OpenCV VideoCapture buffers RTSP frames sequentially when consumer FPS < source FPS. Lack of latest-frame-grabber thread creates unbounded latency backlog."
+  },
+  "section_7_hardware_utilization": {
+    "A_Idle": {
+      "cpu_pct": 39.2,
+      "gpu_util_pct": 0.0,
+      "gpu_memory_mb": 0.0
+    },
+    "B_YOLO_Inference": {
+      "cpu_pct": 56.4,
+      "gpu_util_pct": 67.4,
+      "gpu_memory_mb": 272.5
+    },
+    "C_RTSP_Continuous_API": {
+      "cpu_pct": 54.8,
+      "gpu_util_pct": 32.9,
+      "gpu_memory_mb": 411.0
+    },
+    "D_4Cam_Batched": {
+      "cpu_pct": 47.4,
+      "gpu_util_pct": 74.2,
+      "gpu_memory_mb": 433.0
+    }
+  }
+}

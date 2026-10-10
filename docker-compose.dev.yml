@@ -1,0 +1,48 @@
+version: '3.8'
+
+# SafeVision AI — Local Development Docker Support (Optional Services)
+# Provides standalone MongoDB rs0 replica set and MediaMTX RTSP streaming server
+# allowing Native Windows Python 3.11 AI, Node backend, and Vite client to connect locally.
+
+services:
+  # 1. Local MongoDB Replica Set (rs0)
+  mongodb-dev:
+    image: mongo:7.0
+    container_name: safevision-mongo-dev
+    command: ["--replSet", "rs0", "--bind_ip_all"]
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-dev-data:/data/db
+    healthcheck:
+      test: >
+        mongosh --quiet --eval "
+          try {
+            rs.status().ok
+          } catch (e) {
+            rs.initiate({
+              _id: 'rs0',
+              members: [{ _id: 0, host: '127.0.0.1:27017' }]
+            }).ok
+          }
+        " || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+
+  # 2. MediaMTX RTSP / WebRTC Streaming Server
+  mediamtx:
+    image: bluenviron/mediamtx:latest
+    container_name: safevision-mediamtx-dev
+    ports:
+      - "8554:8554"   # RTSP
+      - "1935:1935"   # RTMP
+      - "8888:8888"   # HLS
+      - "8889:8889"   # WebRTC
+    environment:
+      - MTX_PROTOCOLS=tcp
+    restart: unless-stopped
+
+volumes:
+  mongo-dev-data:

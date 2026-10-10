@@ -1,0 +1,27 @@
+{
+  "before": {
+    "pipeline": "Legacy Synchronous (Before)",
+    "throughput_fps": 6.14,
+    "latency_avg_ms": 162.86,
+    "latency_p50_ms": 113.73,
+    "latency_p95_ms": 164.41,
+    "final_frame_age_sec": 3.55,
+    "stale_frames_dropped": 0,
+    "operating_mode": "HIGH LATENCY / BUFFERED"
+  },
+  "after": {
+    "pipeline": "Decoupled Low-Latency (After)",
+    "throughput_fps": 10.84,
+    "latency_avg_ms": 92.23,
+    "latency_p50_ms": 90.54,
+    "latency_p95_ms": 124.23,
+    "average_frame_age_ms": 19.24,
+    "stale_frames_dropped": 72,
+    "operating_mode": "LOW LATENCY"
+  },
+  "delta": {
+    "fps_gain_percentage": 76.5,
+    "latency_reduction_percentage": 43.4,
+    "latency_mode_transition": "HIGH LATENCY / BUFFERED -> LOW LATENCY"
+  }
+}
