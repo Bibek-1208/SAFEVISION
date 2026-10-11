@@ -1,5 +1,3 @@
-version: '3.8'
-
 # SafeVision AI — Production & Deployment Compose Specification
 # Includes MongoDB rs0 replica set, NVIDIA GPU deployment configuration,
 # managed model weight volume, and strict health checks.
